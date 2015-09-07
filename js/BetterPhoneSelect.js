@@ -1,6 +1,34 @@
 jQuery.fn.extend({
 	BetterPhoneSelect : function(config) {
 				
+		/****************************
+		 * 建议
+		 * 1、先设置默认config。
+		 * 2、读取传进来的config，覆盖默认。
+		 * 3、处理this对象，this对象是html页面的一个jquery对象 $(".myselect")，里面可能匹配了一个或多个select元素，每一个元素都要把它处理成有它自己独立行为的控件，这个可以参考PhonePhotoUpload项目。
+		 *    A、让select元素隐藏起来，在它后面添加一个span元素来代替select已选中选中项的显示。
+		 *    B、为span元素绑定点击事件，当点击时，显示一个浮动层，并从已隐藏的select元素中读取它的可选数据进行显示（option的innerText和value）。<option value="value">innerText</option>
+		 *    C、为已显示的浮动层中的每一个可选项绑定点击事件，当点击时，读取被点项的value，并把已隐藏的select元素的选中项设为该value，把span元素中的文字设置为该项的innerText，然后关闭浮动层。
+		 * **************************
+		 */
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 				//隐藏下拉标签
 				$(this).css("display","none");
 				
