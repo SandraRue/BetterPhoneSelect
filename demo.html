@@ -4,12 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <title>select_test</title>
-<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/BetterPhoneSelect.js"></script>
 <script type="text/javascript">
 $(document).ready(function($){
-    $(".myselect").BetterPhoneSelect();
-});    
+    $(".myselect").BetterPhoneSelect({
+    	FontColor:'#333',//设置文字颜色
+		BackgroundColor:"white",//设置背景颜色
+		FontSize:"14px",//设置文字大小
+    });
+}); 
 </script>
 </head>
 <body>
@@ -18,7 +22,7 @@ $(document).ready(function($){
 	<option>分类2</option>
 	<option>分类3</option>
 	<option>分类4</option>
-	<option class="sec">分类5</option>
+	<option>分类5</option>
 	<option>分类6</option>
 	<option>分类2</option>
 	<option>分类3</option>
